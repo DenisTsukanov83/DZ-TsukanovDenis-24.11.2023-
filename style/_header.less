@@ -182,7 +182,7 @@
     .header {
         display: flex;
         flex-direction: column-reverse;
-        height: max-content;
+        height: 100vh;
 
 
         &-photo {
@@ -203,30 +203,31 @@
             .top(0);
             .left(0);
             .font-size(120);
-            .padding(100, 917, 570, 100);
+            .padding(100, 850, 570, 100);
             background-color: @main-color;
-            z-index: 0
+            z-index: 0;
+            width: 100%
         }
 
         &-content h1 {
-            .font-size(178);
+            .font-size(220);
         }
 
         &-content h1 span:nth-child(2) {
-            .font-size(150);
+            .font-size(200);
             -webkit-text-stroke: 0.3125rem @main-color;
         }
 
         &-subtitle {
-            .font-size(50);
-            .margin-top(50);
+            .font-size(65);
+            .margin-top(100);
             .padding(2, 24, 0, 24);
         }
 
         &-text {
             .margin-top(100);
-            .width(990);
-            .font-size(31);
+            .width(1260);
+            .font-size(42);
             text-align-last: justify;
         }
 

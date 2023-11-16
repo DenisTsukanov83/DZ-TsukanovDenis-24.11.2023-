@@ -170,7 +170,7 @@
   .header {
     display: flex;
     flex-direction: column-reverse;
-    height: max-content;
+    height: 100vh;
   }
   .header-photo {
     padding: calc((350 / 16) * 1rem) calc((350 / 16) * 1rem) calc((120 / 16) * 1rem) calc((350 / 16) * 1rem);
@@ -188,26 +188,27 @@
     top: calc((0 / 16) * 1rem);
     left: calc((0 / 16) * 1rem);
     font-size: calc((120 / 16) * 1rem);
-    padding: calc((100 / 16) * 1rem) calc((917 / 16) * 1rem) calc((570 / 16) * 1rem) calc((100 / 16) * 1rem);
+    padding: calc((100 / 16) * 1rem) calc((850 / 16) * 1rem) calc((570 / 16) * 1rem) calc((100 / 16) * 1rem);
     background-color: #ffba31;
     z-index: 0;
+    width: 100%;
   }
   .header-content h1 {
-    font-size: calc((178 / 16) * 1rem);
+    font-size: calc((220 / 16) * 1rem);
   }
   .header-content h1 span:nth-child(2) {
-    font-size: calc((150 / 16) * 1rem);
+    font-size: calc((200 / 16) * 1rem);
     -webkit-text-stroke: 0.3125rem #ffba31;
   }
   .header-subtitle {
-    font-size: calc((50 / 16) * 1rem);
-    margin-top: calc((50 / 16) * 1rem);
+    font-size: calc((65 / 16) * 1rem);
+    margin-top: calc((100 / 16) * 1rem);
     padding: calc((2 / 16) * 1rem) calc((24 / 16) * 1rem) calc((0 / 16) * 1rem) calc((24 / 16) * 1rem);
   }
   .header-text {
     margin-top: calc((100 / 16) * 1rem);
-    width: calc((990 / 16) * 1rem);
-    font-size: calc((31 / 16) * 1rem);
+    width: calc((1260 / 16) * 1rem);
+    font-size: calc((42 / 16) * 1rem);
     text-align-last: justify;
   }
   .header button {
