@@ -170,7 +170,7 @@
   .header {
     display: flex;
     flex-direction: column-reverse;
-    height: 100vh;
+    height: max-content;
   }
   .header-photo {
     padding: calc((350 / 16) * 1rem) calc((350 / 16) * 1rem) calc((120 / 16) * 1rem) calc((350 / 16) * 1rem);
@@ -197,7 +197,7 @@
     font-size: calc((220 / 16) * 1rem);
   }
   .header-content h1 span:nth-child(2) {
-    font-size: calc((200 / 16) * 1rem);
+    font-size: calc((197 / 16) * 1rem);
     -webkit-text-stroke: 0.3125rem #ffba31;
   }
   .header-subtitle {
