@@ -1,6 +1,8 @@
 
 $( document ).ready(function() {
 
+    //Переключение меню
+
     $('.about .about-nav ul li a').click((e) => {
         e.preventDefault();
         $('.about .contents').hide();
@@ -21,6 +23,8 @@ $( document ).ready(function() {
         }
     });
 
+    // Переключение Portfolio
+
     $('.portfolio-nav ul li a').click((e) => {
         e.preventDefault();
         $('.portfolio-nav ul li a').removeClass('active').addClass('not-active');
@@ -40,4 +44,13 @@ $( document ).ready(function() {
             break;
         }
     });
+
+    // Открытие меню
+
+    $('.hamburger').click((e) => {
+        console.log($('.about-menu'))
+        $('.about-nav').animate({
+            'left': '0'
+        }, 500)
+    })
 });

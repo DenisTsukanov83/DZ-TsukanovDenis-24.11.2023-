@@ -447,8 +447,55 @@
     grid-template-columns: 100%;
     height: calc((744 / 16) * 1rem);
   }
-  .about-nav {
+  .about-photo {
     display: none;
+  }
+  .about-nav {
+    display: flex;
+    position: absolute;
+    background-color: #dddddd;
+    width: 55%;
+    top: calc((0 / 16) * 1rem);
+    height: calc((1700 / 16) * 1rem);
+    z-index: 5;
+    border: 0.8rem dotted black;
+    left: calc((-880 / 16) * 1rem);
+  }
+  .about-menu {
+    width: 100%;
+  }
+  .about-menu-devider {
+    width: 0;
+    height: calc((90 / 16) * 1rem);
+    border-right: calc((12 / 16) * 1rem) dotted black;
+  }
+  .about-menu-round {
+    width: calc((25 / 16) * 1rem);
+    height: calc((25 / 16) * 1rem);
+    border-radius: 100%;
+    background-color: black;
+  }
+  .about ul {
+    display: flex;
+    justify-content: center;
+    gap: calc((15 / 16) * 1rem);
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    padding: calc((0 / 16) * 1rem) calc((0 / 16) * 1rem) calc((0 / 16) * 1rem) calc((0 / 16) * 1rem);
+    font-size: calc((80 / 16) * 1rem);
+  }
+  .about li a {
+    font-family: 'Catamaran';
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    line-height: calc((5 / 16) * 1rem);
+  }
+  .about li a:hover {
+    color: white;
   }
   .about-container {
     width: 100%;
@@ -495,6 +542,8 @@
   .about-do h3 {
     text-align: center;
     font-size: calc((110 / 16) * 1rem);
+    margin-left: calc((-282 / 16) * 1rem);
+    margin-top: calc((100 / 16) * 1rem);
   }
   .about-do-item {
     display: grid;
