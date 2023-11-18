@@ -25,6 +25,7 @@
     &-menu {
         display: flex;
         justify-content: center;
+
         ul {
             display: flex;
             justify-content: center;
@@ -96,6 +97,10 @@
         .font-size(34);
     }
 
+    &-text br {
+        display: none;
+    }
+
     &-text div {
         font-family: 'Yu-gotic-bold';
         .width(830);
@@ -118,7 +123,7 @@
             font-family: 'catamaran';
             .font-size(26);
         }
-    
+
         &-item {
             display: grid;
             grid-template-columns: 30% 69%;
@@ -126,24 +131,24 @@
             width: 100%;
             .margin-top(10);
         }
-    
+
         &-img {
             .width(50);
             height: max-content;
-    
+
         }
-    
+
         &-img img {
             width: 100%;
         }
-    
+
         &-subtitle {
             .font-size(14);
             font-family: 'catamaran';
             font-weight: 900;
             text-transform: uppercase;
         }
-    
+
         &-text {
             .font-size(11);
             width: 100%;
@@ -158,34 +163,35 @@
                 .margin-top(-17);
                 .margin-left(-25);
             }
-        
+
             &>div:nth-child(2) {
                 .margin-left(5);
                 .margin-top(-3);
             }
         }
-        
+
         & .second {
             & .about-do-img {
                 .width(67);
                 .margin-top(-7);
                 .margin-left(-2);
             }
-        
+
             &>div:nth-child(2) {
                 .margin-left(5);
                 .margin-top(-13);
             }
         }
-        
-        & .third  {
+
+        & .third {
             .margin-top(20);
+
             & .about-do-img {
                 .width(78);
                 .margin-top(-3);
                 .margin-left(-10);
             }
-        
+
             &>div:nth-child(2) {
                 .margin-left(5);
                 .margin-top(-4);
@@ -252,14 +258,196 @@
 }
 
 
-@media screen and (max-width: 1200) {
+@media screen and (max-width: 1200) {}
 
-}
+@media screen and (min-width: 768px) and (max-width: 990px) {}
 
-@media screen and (min-width: 768px) and (max-width: 990px) {
+@media screen and (max-width: 600px) {
+    .about {
+        display: grid;
+        grid-template-columns: 100%;
+        .height(744);
+
+        &-nav {
+            display: none;
+        }
+
+        &-container {
+            width: 100%;
+            .padding(0, 0, 0, 24);
+        }
     
-}
-
-@media screen and (min-width: 600px ) and (max-width: 767px) {
     
+        &-content {
+            .padding(10, 10, 10, 10);
+        }
+
+        &-title {
+            .padding(45, 0, 20, 0);
+            height: max-content;
+            border: calc((6 / 16) * 1rem) dotted black;
+        }
+    
+        &-title h2 {
+            .font-size(220);
+        }
+    
+        &-text {
+            .margin-top(100);
+        }
+    
+        &-text h4 {
+            text-align: center;
+            .font-size(100);
+            margin: auto;
+        }
+    
+        &-text h4 span {
+            .font-size(110);
+        }
+
+        &-text br {
+            display: block;
+        }
+    
+        &-text div {
+            width: 99%;
+            .font-size(42);
+            .margin-top(100);
+        }
+    
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            .margin-top(29);
+        }
+    
+        &-do {
+            .padding(2, 120, 200, 455);
+    
+            & h3 {
+                text-align: center;
+                .font-size(110);
+            }
+    
+            &-item {
+                display: grid;
+                grid-template-columns: 23% 54%;
+                gap: 0;
+                width: 100%;
+                .margin-top(80);
+            }
+    
+            &-img {
+                .width(375);
+            }
+    
+            &-img img {
+                width: 100%;
+            }
+    
+            &-subtitle {
+                .font-size(62);
+                .margin-left(-320);
+            }
+    
+            &-text {
+                .font-size(42);
+                width: 100%;
+                text-align: justify;
+                .letter-spacing(-0.5);
+                text-align-last: justify;
+            }
+    
+            & .first {
+                & .about-do-img {
+                    .width(275);
+                    .margin-top(60);
+                    .margin-left(-25);
+                }
+    
+                &>div:nth-child(2) {
+                    .margin-left(5);
+                    .margin-top(-3);
+                }
+            }
+    
+            & .second {
+                & .about-do-img {
+                    .width(176);
+                    .margin-top(90);
+                    .margin-left(22);
+                }
+    
+                &>div:nth-child(2) {
+                    .margin-left(5);
+                    .margin-top(-13);
+                }
+            }
+    
+            & .third {
+                .margin-top(20);
+    
+                & .about-do-img {
+                    .width(202);
+                    .margin-top(88);
+                    .margin-left(12);
+                }
+    
+                &>div:nth-child(2) {
+                    .margin-left(5);
+                    .margin-top(-4);
+                }
+            }
+        }
+    
+        &-experience {
+            grid-template-columns: repeat(2, 1fr);
+            .gap(70);
+            height: max-content;
+            width: 80%;
+            margin: auto;
+            .padding(30, 0, 30, 0);
+            background-color: transparent;
+    
+            &__item {
+                background-color: @black;
+                .padding(0, 30, 0, 30);
+    
+                &_first>div {
+                    border-bottom: none;
+                    .padding(10, 30, 40, 30);
+                }
+    
+                &_second>div {
+                    border-bottom: none;
+                    .padding(10, 30, 40, 30);
+                }
+    
+                &_third>div {
+                    .padding(20, 30, 40, 15);
+                }
+    
+                &_fourth>div {
+                    .padding(20, 30, 40, 15);
+                }
+            }
+    
+            &__item>div h4 {
+                .font-size(120);
+            }
+    
+            &__item>div div {
+                .font-size(30);
+            }
+    
+            &-devider {
+                display: none;
+            }
+        }
+    }
+
+    
+
+
 }
