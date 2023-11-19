@@ -74,13 +74,13 @@ $( document ).ready(function() {
             }, 500);
 
             $('.hamburger div:nth-child(1)').css({
-                'transform': 'rotate(45deg) translateY(0.95rem)'
+                'transform': 'rotate(45deg) translateY(0.98rem)'
             });
             $('.hamburger div:nth-child(2)').css({
                 'display': 'none'
             });
             $('.hamburger div:nth-child(3)').css({
-                'transform': 'rotate(-45deg) translateY(-0.95rem)'
+                'transform': 'rotate(-45deg) translateY(-0.98rem)'
             });
         }
         

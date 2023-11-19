@@ -438,6 +438,7 @@
   }
   .about-content {
     padding: calc((10 / 16) * 1rem) calc((10 / 16) * 1rem) calc((10 / 16) * 1rem) calc((10 / 16) * 1rem);
+    /* display: none; */
   }
   .about-title {
     padding: calc((45 / 16) * 1rem) calc((0 / 16) * 1rem) calc((20 / 16) * 1rem) calc((0 / 16) * 1rem);
@@ -576,7 +577,8 @@
   grid-template-columns: 21% 79%;
 }
 .resume-content {
-  display: none;
+  /* display: none; */
+  display: block;
   width: 100%;
   padding: calc((65 / 16) * 1rem) calc((100 / 16) * 1rem) calc((0 / 16) * 1rem) calc((85 / 16) * 1rem);
   background-color: #dddddd;
@@ -640,6 +642,61 @@
   width: 100%;
   border-bottom: calc((2 / 16) * 1rem) dotted black;
   margin-bottom: calc((20 / 16) * 1rem);
+}
+@media screen and (max-width: 600px) {
+  .resume {
+    display: grid;
+    grid-template-columns: 21% 79%;
+  }
+  .resume-content {
+    display: none;
+    /* display: block; */
+    padding: calc((10 / 16) * 1rem) calc((10 / 16) * 1rem) calc((10 / 16) * 1rem) calc((10 / 16) * 1rem);
+  }
+  .resume-title {
+    padding: calc((45 / 16) * 1rem) calc((0 / 16) * 1rem) calc((20 / 16) * 1rem) calc((0 / 16) * 1rem);
+    height: max-content;
+    border: calc((6 / 16) * 1rem) dotted black;
+  }
+  .resume-title h2 {
+    font-size: calc((220 / 16) * 1rem);
+  }
+  .resume-subtitle {
+    font-size: calc((110 / 16) * 1rem);
+    margin-top: calc((100 / 16) * 1rem);
+  }
+  .resume-column {
+    padding: calc((0 / 16) * 1rem) calc((0 / 16) * 1rem) calc((0 / 16) * 1rem) calc((30 / 16) * 1rem);
+  }
+  .resume-row {
+    display: flex;
+    flex-direction: column;
+    gap: calc((50 / 16) * 1rem);
+    padding: calc((7 / 16) * 1rem) calc((0 / 16) * 1rem) calc((35 / 16) * 1rem) calc((0 / 16) * 1rem);
+    margin-left: calc((235 / 16) * 1rem);
+  }
+  .resume-item {
+    width: calc((1130 / 16) * 1rem);
+    margin-top: calc((60 / 16) * 1rem);
+    margin-bottom: calc((100 / 16) * 1rem);
+  }
+  .resume-item-title {
+    font-size: calc((75 / 16) * 1rem);
+    padding: calc((0 / 16) * 1rem) calc((10 / 16) * 1rem) calc((0 / 16) * 1rem) calc((10 / 16) * 1rem);
+  }
+  .resume-item-subtitle {
+    font-size: calc((85 / 16) * 1rem);
+    margin-top: calc((2 / 16) * 1rem);
+  }
+  .resume-item-text {
+    margin-top: calc((0 / 16) * 1rem);
+    font-size: calc((57 / 16) * 1rem);
+  }
+  .resume-devider {
+    width: 100%;
+    border-bottom: calc((8 / 16) * 1rem) dotted black;
+    margin-bottom: calc((20 / 16) * 1rem);
+  }
 }
 .testimon-content {
   display: none;
