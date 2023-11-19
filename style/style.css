@@ -438,7 +438,7 @@
   }
   .about-content {
     padding: calc((10 / 16) * 1rem) calc((10 / 16) * 1rem) calc((10 / 16) * 1rem) calc((10 / 16) * 1rem);
-    /* display: none; */
+    display: block;
   }
   .about-title {
     padding: calc((45 / 16) * 1rem) calc((0 / 16) * 1rem) calc((20 / 16) * 1rem) calc((0 / 16) * 1rem);
@@ -774,6 +774,51 @@
 .testimon-item-stars div img {
   width: 100%;
   height: max-content;
+}
+@media screen and (max-width: 600px) {
+  .testimon-content {
+    display: none;
+    padding: calc((10 / 16) * 1rem) calc((10 / 16) * 1rem) calc((10 / 16) * 1rem) calc((10 / 16) * 1rem);
+  }
+  .testimon-title {
+    padding: calc((45 / 16) * 1rem) calc((0 / 16) * 1rem) calc((20 / 16) * 1rem) calc((0 / 16) * 1rem);
+    height: max-content;
+    border: calc((6 / 16) * 1rem) dotted black;
+  }
+  .testimon-title h2 {
+    font-size: calc((180 / 16) * 1rem);
+  }
+  .testimon-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, calc((700 / 16) * 1rem));
+    gap: calc((19 / 16) * 1rem);
+    padding: calc((0 / 16) * 1rem) calc((27 / 16) * 1rem) calc((0 / 16) * 1rem) calc((27 / 16) * 1rem);
+  }
+  .testimon-item {
+    margin-top: calc((30 / 16) * 1rem);
+    padding: calc((45 / 16) * 1rem) calc((45 / 16) * 1rem) calc((45 / 16) * 1rem) calc((45 / 16) * 1rem);
+    grid-template-columns: 35% 60%;
+    grid-template-rows: 73% 10%;
+  }
+  .testimon-item-title {
+    font-size: calc((120 / 16) * 1rem);
+    margin-top: calc((30 / 16) * 1rem);
+  }
+  .testimon-item-subtitle {
+    font-size: calc((85 / 16) * 1rem);
+    margin-top: calc((30 / 16) * 1rem);
+  }
+  .testimon-item-text {
+    font-size: calc((57 / 16) * 1rem);
+    margin-top: calc((30 / 16) * 1rem);
+  }
+  .testimon-item-photo {
+    overflow: hidden;
+  }
+  .testimon-item-stars div {
+    width: calc((55 / 16) * 1rem);
+    height: calc((55 / 16) * 1rem);
+  }
 }
 .contact-content {
   display: none;
