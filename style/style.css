@@ -98,71 +98,6 @@
   border: none;
   background-color: #ffba31;
 }
-@media screen and (max-width: 1200px) {
-  .header-content {
-    padding: calc((120 / 16) * 1rem) calc((0 / 16) * 1rem) calc((0 / 16) * 1rem) calc((50 / 16) * 1rem);
-  }
-  .header-content h3 {
-    font-size: calc((45 / 16) * 1rem);
-  }
-  .header-content h1 {
-    font-size: calc((80 / 16) * 1rem);
-  }
-  .header-content h1 span:nth-child(2) {
-    font-size: calc((72 / 16) * 1rem);
-  }
-  .header-subtitle {
-    font-size: calc((21 / 16) * 1rem);
-  }
-  .header-text {
-    width: calc((500 / 16) * 1rem);
-    font-size: calc((18 / 16) * 1rem);
-  }
-  .header-text span,
-  .header-text br {
-    display: none;
-  }
-  .header button {
-    font-size: calc((23 / 16) * 1rem);
-    padding: calc((15 / 16) * 1rem) calc((10 / 16) * 1rem) calc((13 / 16) * 1rem) calc((10 / 16) * 1rem);
-    width: calc((245 / 16) * 1rem);
-    margin-top: calc((20 / 16) * 1rem);
-  }
-}
-@media screen and (min-width: 601px) and (max-width: 990px) {
-  body {
-    padding: calc((44 / 16) * 1rem) calc((70 / 16) * 1rem) calc((44 / 16) * 1rem) calc((70 / 16) * 1rem) !important;
-  }
-  body .header-content {
-    padding: calc((120 / 16) * 1rem) calc((0 / 16) * 1rem) calc((0 / 16) * 1rem) calc((50 / 16) * 1rem);
-  }
-  body .header-content h3 {
-    font-size: calc((45 / 16) * 1rem);
-  }
-  body .header-content h1 {
-    font-size: calc((80 / 16) * 1rem);
-  }
-  body .header-content h1 span:nth-child(2) {
-    font-size: calc((72 / 16) * 1rem);
-  }
-  body .header-subtitle {
-    font-size: calc((21 / 16) * 1rem);
-  }
-  body .header-text {
-    width: calc((500 / 16) * 1rem);
-    font-size: calc((18 / 16) * 1rem);
-  }
-  body .header-text span,
-  body .header-text br {
-    display: none;
-  }
-  body .header button {
-    font-size: calc((23 / 16) * 1rem);
-    padding: calc((15 / 16) * 1rem) calc((10 / 16) * 1rem) calc((13 / 16) * 1rem) calc((10 / 16) * 1rem);
-    width: calc((245 / 16) * 1rem);
-    margin-top: calc((20 / 16) * 1rem);
-  }
-}
 @media screen and (max-width: 600px) {
   body {
     padding: 0 !important;
@@ -1018,6 +953,7 @@
   width: 100%;
   height: calc((15 / 16) * 1rem);
   background-color: black;
+  transition: 0.5s;
 }
 @media screen and (max-width: 600px) {
   .hamburger {

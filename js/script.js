@@ -21,6 +21,10 @@ $( document ).ready(function() {
             case e.target.textContent == 'Portfolio': $('.portfolio-content').show();
             break;
         }
+
+        if(window. innerWidth < 601) {
+            showMenu();
+        }
     });
 
     // Переключение Portfolio
@@ -47,10 +51,43 @@ $( document ).ready(function() {
 
     // Открытие меню
 
-    $('.hamburger').click((e) => {
-        console.log($('.about-menu'))
-        $('.about-nav').animate({
-            'left': '0'
-        }, 500)
-    })
+    let isActiveMenu = false;
+
+    function showMenu() {
+        if(isActiveMenu) {
+            $('.about-nav').animate({
+                'left': '-55rem'
+            }, 500);
+
+            $('.hamburger div:nth-child(1)').css({
+                'transform': 'rotate(0deg) translateY(0rem)'
+            });
+            $('.hamburger div:nth-child(2)').css({
+                'display': 'block'
+            });
+            $('.hamburger div:nth-child(3)').css({
+                'transform': 'rotate(0deg) translateY(0rem)'
+            });
+        } else {
+            $('.about-nav').animate({
+                'left': '0'
+            }, 500);
+
+            $('.hamburger div:nth-child(1)').css({
+                'transform': 'rotate(45deg) translateY(0.95rem)'
+            });
+            $('.hamburger div:nth-child(2)').css({
+                'display': 'none'
+            });
+            $('.hamburger div:nth-child(3)').css({
+                'transform': 'rotate(-45deg) translateY(-0.95rem)'
+            });
+        }
+        
+        isActiveMenu = !isActiveMenu;
+    }
+
+    $('.hamburger').click(() => {
+        showMenu();
+    });
 });
