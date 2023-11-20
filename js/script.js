@@ -3,28 +3,46 @@ $( document ).ready(function() {
 
     //Переключение меню
 
-    $('.about .about-nav ul li a').click((e) => {
-        e.preventDefault();
-        $('.about .contents').hide();
+    function showContents(e) {
+
+        if(e.target.textContent != 'Home' && !e.target.classList.contains('aside-menu-item-1')) $('.about .contents').hide();
+        
         $('.about .about-menu ul li a').removeClass('active');
         e.target.classList.add('active');
+
+        $.each($('.aside-menu-item'), (i, el) => {
+            $(el).css({
+                'background-image': `${$(el).css('background-image').replace(/white/gi, 'black')}`
+            })
+        });
+
+        $(e.target).css('background-image', $(e.target).css('background-image').replace(/black/gi, 'white'));
         
         switch(true) {
-            case e.target.textContent == 'About me': $('.about-content').show();
+            case e.target.textContent == 'About me' || e.target.classList.contains('aside-menu-item-2'): $('.about-content').show();
             break;
-            case e.target.textContent == 'Resume': $('.resume-content').show();
+            case e.target.textContent == 'Resume' || e.target.classList.contains('aside-menu-item-3'): $('.resume-content').show();
             break;
-            case e.target.textContent == 'Testimonials': $('.testimon-content').show();
+            case e.target.textContent == 'Portfolio' || e.target.classList.contains('aside-menu-item-4'): $('.portfolio-content').show();
             break;
-            case e.target.textContent == 'Contact': $('.contact-content').show();
+            case e.target.textContent == 'Testimonials' || e.target.classList.contains('aside-menu-item-5'): $('.testimon-content').show();
             break;
-            case e.target.textContent == 'Portfolio': $('.portfolio-content').show();
+            case e.target.textContent == 'Contact' || e.target.classList.contains('aside-menu-item-6'): $('.contact-content').show();
             break;
         }
 
         if(window. innerWidth < 601) {
             showMenu();
         }
+    }
+
+    $('.about .about-nav ul li a').click((e) => {
+        /* e.preventDefault(); */
+        showContents(e);
+    });
+
+    $('.aside-menu-item').click((e) => {
+        showContents(e);
     });
 
     // Переключение Portfolio

@@ -1054,7 +1054,7 @@
   background-image: url(../img/aside-menu/home-white.svg);
 }
 .aside-menu-item-2 {
-  background-image: url(../img/aside-menu/man-black.svg);
+  background-image: url(../img/aside-menu/man-white.svg);
 }
 .aside-menu-item-2:hover {
   background-image: url(../img/aside-menu/man-white.svg);
@@ -1122,6 +1122,9 @@
 html,
 body {
   font-size: 1vw;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   background: url(../img/beton.jpeg);
