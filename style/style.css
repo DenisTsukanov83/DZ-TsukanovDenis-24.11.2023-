@@ -1050,38 +1050,20 @@
 .aside-menu-item-1 {
   background-image: url(../img/aside-menu/home-black.svg);
 }
-.aside-menu-item-1:hover {
-  background-image: url(../img/aside-menu/home-white.svg);
-}
 .aside-menu-item-2 {
-  background-image: url(../img/aside-menu/man-white.svg);
-}
-.aside-menu-item-2:hover {
   background-image: url(../img/aside-menu/man-white.svg);
 }
 .aside-menu-item-3 {
   background-image: url(../img/aside-menu/siutecase-black.svg);
 }
-.aside-menu-item-3:hover {
-  background-image: url(../img/aside-menu/siutecase-white.svg);
-}
 .aside-menu-item-4 {
   background-image: url(../img/aside-menu/monitor-black.svg);
-}
-.aside-menu-item-4:hover {
-  background-image: url(../img/aside-menu/monitor-white.svg);
 }
 .aside-menu-item-5 {
   background-image: url(../img/aside-menu/megafon-black.svg);
 }
-.aside-menu-item-5:hover {
-  background-image: url(../img/aside-menu/megafon-white.svg);
-}
 .aside-menu-item-6 {
   background-image: url(../img/aside-menu/plane-black.svg);
-}
-.aside-menu-item-6:hover {
-  background-image: url(../img/aside-menu/plane-white.svg);
 }
 .aside-menu-devider {
   height: calc((15 / 16) * 1rem);

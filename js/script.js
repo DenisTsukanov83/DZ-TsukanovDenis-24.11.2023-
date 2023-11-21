@@ -2,12 +2,14 @@
 $( document ).ready(function() {
 
     //Переключение меню
-
     function showContents(e) {
 
         if(e.target.textContent != 'Home' && !e.target.classList.contains('aside-menu-item-1')) $('.about .contents').hide();
         
         $('.about .about-menu ul li a').removeClass('active');
+        e.target.classList.add('active');
+
+        $('.aside-menu-item').removeClass('active');
         e.target.classList.add('active');
 
         $.each($('.aside-menu-item'), (i, el) => {
@@ -37,7 +39,6 @@ $( document ).ready(function() {
     }
 
     $('.about .about-nav ul li a').click((e) => {
-        /* e.preventDefault(); */
         showContents(e);
     });
 
@@ -45,8 +46,21 @@ $( document ).ready(function() {
         showContents(e);
     });
 
-    // Переключение Portfolio
+    // Hover
+    $('.aside-menu-item').mouseover((e) => {
+        if(!$(e.target).hasClass('active')) {
+            $(e.target).css('background-image', $(e.target).css('background-image').replace(/black/gi, 'white'));
+            
+        }
+    });
+    $('.aside-menu-item').mouseleave((e) => {
+        if(!$(e.target).hasClass('active')) {
+            $(e.target).css('background-image', $(e.target).css('background-image').replace(/white/gi, 'black'));
+        }
+        
+    });
 
+    // Переключение Portfolio
     $('.portfolio-nav ul li a').click((e) => {
         e.preventDefault();
         $('.portfolio-nav ul li a').removeClass('active').addClass('not-active');
